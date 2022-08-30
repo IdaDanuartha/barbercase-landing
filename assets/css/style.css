@@ -11,6 +11,7 @@
     --secondary-color: #AC977B;
     --secondary-color-with-opacity: rgba(172,151,123, 0.7);
     --small-text-color: rgba(255, 255, 255,0.7);
+    --swiper-navigation-size: 14px;
 }
 
 html {
@@ -30,6 +31,28 @@ section {
     margin-top: 20px;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.title {
+    color: var(--secondary-color);
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: var(--small-text-color);
+    margin-bottom: 50px;
+}
+
+
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -37,6 +60,22 @@ section {
     padding: 20px 0;
     position: fixed;
     width: 100%;
+    transition: all .2s;
+    z-index: 99;
+}
+
+.navbar.scroll {
+    background-color: rgba(172,151,123, 0.5);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+    backdrop-filter: blur(15px);
+}
+
+.navbar.scroll .navbar-brand, .navbar.scroll .nav-item .nav-link {
+    color: #fff !important;
+}
+
+.navbar.scroll .border-bottom {
+    display: none;
 }
 
 .navbar .border-bottom {    
@@ -44,10 +83,12 @@ section {
     height: 2px;
     margin-top: 20px;
     background-color: var(--secondary-color);
+    transition: all .2s;
 }
 
 .navbar .navbar-brand, .navbar .nav-item .nav-link{
     color: var(--secondary-color) !important;
+    font-weight: 500;
 }
 
 
@@ -135,16 +176,6 @@ header .right-panel .header-img {
 }
 
 /* Service */
-.service-container .title {
-    color: var(--secondary-color);
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.service-container .description {
-    color: var(--small-text-color);
-}
-
 .service-container .row {
     margin-top: 50px;
 }
@@ -176,7 +207,7 @@ header .right-panel .header-img {
     background-color: #262626;
     padding: 17px;
     box-shadow: 0 5px 10px #202020;
-
+    transition: all .3s;
 }
 
 .service-container .card .card-title {
@@ -195,17 +226,221 @@ header .right-panel .header-img {
     margin-left: 40px;
 }
 
-.about-container .right-panel .title {
-    color: var(--secondary-color);
-}
-
 .about-container .right-panel .description {
-    color: var(--small-text-color);
     margin-bottom: 35px;
-    font-weight: 300;
     padding-right: 150px;
 }
 
 .about-container .right-panel .img-container img:first-child {
     margin-right: 30px;
+}
+
+
+
+/* Pricing */
+.pricing-container .list-group {
+    width: 420px;
+}
+
+.pricing-container .list-group:nth-child(2) {
+    margin: 0 30px;
+}
+
+.pricing-container .list-group .duration-text {
+    color: var(--small-text-color);
+}
+
+.pricing-container .list-group .list-group-item:not(.list-group-item:first-child) {
+    padding: 20px 0 0;
+    border-radius: 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.pricing-container .list-group .list-group-item:first-child {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 0;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.pricing-container .list-group .title-text,
+.pricing-container .list-group .price-text {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.pricing-container .list-group .duration-text {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+
+
+/* Gallery */
+.gallery-container .gallery-img-container .gallery-img3,
+.gallery-container .gallery-img-container .gallery-img4 {
+    margin: 0 25px 25px;
+}
+
+.gallery-container .gallery-img-container .gallery-img2,
+.gallery-container .gallery-img-container .gallery-img6 {
+    margin-top: 25px;
+}
+
+.gallery-container .btn-view-more {
+    padding: 12px 30px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0;
+    background-color: var(--secondary-color);
+    margin-top: 40px;
+}
+
+
+/* Testimonial */
+.testimonial-container .swiper {
+    padding: 0 5px;    
+    margin-bottom: 40px;
+}
+
+.testimonial-container .swiper .card {
+    border-top: none;
+    border-bottom: none;
+    border-left: 2px solid var(--secondary-color-with-opacity);
+    transition: all .3s;
+}
+
+.testimonial-container .swiper .card:hover {
+    background-color: var(--secondary-color) !important;
+    color: #fff;
+}
+
+.testimonial-container .swiper .card:hover .profession {
+    color: #fff;
+}
+
+.testimonial-container .swiper .card.last-card {
+    border-right: 2px solid var(--secondary-color-with-opacity);
+}
+
+.testimonial-container .swiper .card .card-body {
+    padding: 30px 48px;
+}
+
+.testimonial-container .swiper .card .card-body .card-text {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: var(--small-text-color);
+}
+
+.testimonial-container .swiper .customer-profile .customer-img {
+    width: 50px;
+    height: 50px;
+}
+
+.testimonial-container .swiper .customer-profile .customer-name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.testimonial-container .swiper .customer-profile .profession {
+    color: var(--secondary-color);
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: -5px;
+    transition: all .3s;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    position: static;
+    /* bottom: -50px;
+    left: 600px; */
+    border: 2px solid var(--secondary-color-with-opacity);
+    color: #fff;
+    padding: 20px;
+    transition: all .3s;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+    background-color: var(--secondary-color);
+}
+
+.swiper-button-prev {
+    margin: 0 10px 100px 600px;
+}
+
+.swiper-button-next {
+    margin: -143px 10px 10px 660px;
+}
+
+/* CTA */
+.cta-container .box-container {
+    width: 100%;
+    height: 350px;
+    background-color: var(--secondary-color);
+    padding: 80px 0;
+}
+
+.cta-container .box-container .title {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.cta-container .box-container .btn-everyday {
+    padding: 12px 30px;
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 100px;
+}
+
+footer .title-text {
+    color: var(--secondary-color);
+    font-size: 20px;
+    margin-bottom: 26px;
+}
+
+footer .sub-text {
+    color: var(--small-text-color);
+    margin-right: 300px;
+    font-weight: 300;
+}
+
+footer .social .social-link {
+    font-size: 14px;
+    border: 2px solid var(--secondary-color-with-opacity);
+    padding: 11px;
+    margin-right: 24px;
+    transition: all .3s;
+}
+
+footer .social .social-link:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+footer li.sub-text {
+    margin: 20px 0;
+}
+
+footer .sub-text a:hover {
+    opacity: 0.6;
+    color: #fff;
+}
+
+footer .list-navigation {
+    margin-right: 20px;
+    width: 18rem;
 }
