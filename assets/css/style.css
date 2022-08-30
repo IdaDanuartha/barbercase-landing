@@ -9,6 +9,8 @@
 :root {
     --main-color: #242424;
     --secondary-color: #AC977B;
+    --secondary-color-with-opacity: rgba(172,151,123, 0.7);
+    --small-text-color: rgba(255, 255, 255,0.7);
 }
 
 html {
@@ -20,13 +22,21 @@ body {
     font-family: 'Roboto Slab', serif;
     background-color: var(--main-color);
     font-size: 16px;
-    height: 2000px;
+    font-weight: 300;
 }
 
+section {
+    padding-top: 100px;
+    margin-top: 20px;
+}
+
+/* Navbar */
 .navbar {
     display: flex;
     flex-direction: column;
     padding: 20px 0;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar .border-bottom {    
@@ -40,8 +50,13 @@ body {
     color: var(--secondary-color) !important;
 }
 
+
+/* Header */
+header {
+    padding-top: 100px;
+}
 header .left-panel {
-    margin: 80px 30px 0 -10px;    
+    margin: 60px 100px 0 -10px;    
 }
 
 header .left-panel .title {
@@ -50,7 +65,7 @@ header .left-panel .title {
 }
 
 header .left-panel .description {
-    color: #fff;
+    color: var(--small-text-color);
     margin: 30px 0 40px 0;
     font-weight: 300;
 }
@@ -66,7 +81,7 @@ header .left-panel .btn-ourservice {
 
 header .left-panel .btn-getstarted {
     background-color: var(--secondary-color);
-    color: #fff;
+    color: var(--small-text-color);
 }
 
 header .left-panel .btn-ourservice {
@@ -75,7 +90,7 @@ header .left-panel .btn-ourservice {
 }
 
 header .left-panel .header-text .content {
-    margin-right: 40px;
+    margin-right: 60px;
     position: relative;
 }
 
@@ -84,7 +99,7 @@ header .left-panel .header-text .content.satu::after {
     width: 87px;
     height: 1px;
     position: absolute;  
-    right: -65px;
+    right: -75px;
     top: 60px;
     background-color: var(--secondary-color);
     transform: rotate(90deg);
@@ -95,7 +110,7 @@ header .left-panel .header-text .content.dua::after {
     width: 87px;
     height: 1px;
     position: absolute;  
-    right: -65px;
+    right: -75px;
     top: 60px;
     background-color: var(--secondary-color);
     transform: rotate(90deg);
@@ -109,12 +124,88 @@ header .left-panel .header-text .big-text {
 }
 
 header .left-panel .header-text .small-text {
-    color: #fff;
-    font-weight: 300;
+    color: var(--small-text-color);
+    font-weight: 200;
     margin-top: -20px;
 }
 
 header .right-panel .header-img {
     margin-top: -20px;
     margin-right: -12px;
+}
+
+/* Service */
+.service-container .title {
+    color: var(--secondary-color);
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.service-container .description {
+    color: var(--small-text-color);
+}
+
+.service-container .row {
+    margin-top: 50px;
+}
+
+.service-container .card {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: 1px solid var(--secondary-color-with-opacity);
+    padding: 40px 30px;
+    transition: all .3s;
+}
+
+.service-container .card:last-child {
+    border-right: 1px solid var(--secondary-color-with-opacity);
+}
+
+.service-container .row .card:hover {
+    background-color: var(--secondary-color) !important;
+    color: #fff;
+}
+
+.service-container .row .card:hover .card-image {
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.service-container .card .card-image {
+    background-color: #262626;
+    padding: 17px;
+    box-shadow: 0 5px 10px #202020;
+
+}
+
+.service-container .card .card-title {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.service-container .card .card-text {
+    color: var(--small-text-color);
+    font-weight: 300;
+}
+
+/* About Us */
+.about-container .right-panel {
+    margin-left: 40px;
+}
+
+.about-container .right-panel .title {
+    color: var(--secondary-color);
+}
+
+.about-container .right-panel .description {
+    color: var(--small-text-color);
+    margin-bottom: 35px;
+    font-weight: 300;
+    padding-right: 150px;
+}
+
+.about-container .right-panel .img-container img:first-child {
+    margin-right: 30px;
 }
