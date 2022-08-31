@@ -30,7 +30,7 @@ AOS.init();
 const navbar = document.querySelector('.navbar')
 
 window.addEventListener('scroll', function() {
-    if(window.scrollY > 80) {
+    if(window.scrollY > 30) {
         navbar.classList.add('scroll')
         console.log('Udah di atas')
     } else {
