@@ -117,17 +117,28 @@ header .left-panel .btn-container {
 
 header .left-panel .btn-getstarted, 
 header .left-panel .btn-ourservice {
-    padding: 12px 30px;
+  padding: 12px 30px;
 }
 
 header .left-panel .btn-getstarted {
-    background-color: var(--secondary-color);
-    color: var(--small-text-color);
+  background-color: var(--secondary-color);
+  color: var(--small-text-color);
+  transition: all .3s;
+}
+
+header .left-panel .btn-getstarted:hover {
+  opacity: 0.7;
 }
 
 header .left-panel .btn-ourservice {
-    border: 2px solid var(--secondary-color);
-    color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  transition: all .3s;
+}
+
+header .left-panel .btn-ourservice:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
 }
 
 header .left-panel .header-text .content {
@@ -299,6 +310,11 @@ header .right-panel .header-img {
     border-radius: 0;
     background-color: var(--secondary-color);
     margin-top: 40px;
+    transition: all .3s;
+}
+
+.gallery-container .btn-view-more:hover {
+  opacity: 0.7;
 }
 
 
@@ -443,4 +459,11 @@ footer .sub-text a:hover {
 footer .list-navigation {
     margin-right: 20px;
     width: 18rem;
+}
+
+footer .text-copyright {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: #7A7E83;
+    font-size: 14px;
 }

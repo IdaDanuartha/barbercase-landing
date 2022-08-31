@@ -18,6 +18,9 @@
     <!-- Swiperjs -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- My Style -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -97,11 +100,11 @@
 
         <!-- Service Start -->
         <section class="container service-container" id="service">
-            <div class="text-center">
+            <div class="text-center" data-aos="fade-up" data-aos-duration="700">
                 <h1 class="title">Our Service</h1>
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit viverra dolor.</p>
             </div>
-            <div class="row">
+            <div class="row" data-aos="fade-up" data-aos-delay="400" data-aos-duration="700">
                 <div class="col-lg-3 col-md-6 card rounded-0 bg-transparent">
                     <div class="card-body text-center">
                         <img class="mb-4 card-image" src="assets/img/scissors-icon.png" alt="">
@@ -141,14 +144,16 @@
         <!-- About Us Start -->
         <section class="container about-container" id="about">
             <div class="d-flex">
-                <img src="assets/img/about-us-img1.png" alt="">
+                <img data-aos="fade-right" data-aos-duration="700" src="assets/img/about-us-img1.png" alt="">
                 <div class="d-flex right-panel justify-content-end flex-column">
-                    <h1 class="title">About Us</h1>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nullam viverra
+                    <h1 class="title" data-aos="fade-up" data-aos-duration="700">About Us</h1>
+                    <p class="description" data-aos="fade-up" data-aos-duration="700">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        In nullam viverra
                         est sit at auctor
                         integer diam. Cursus eget amet mi, non in integer pharetra. Phasellus id morbi ac, non in
                         integer pharetra. Phasellus id morbi ac consectetur.</p>
-                    <div class="d-flex img-container">
+                    <div class="d-flex img-container" data-aos="fade-left" data-aos-duration="700">
                         <img src="assets/img/about-us-img2.png" alt="">
                         <img src="assets/img/about-us-img2.png" alt="">
                     </div>
@@ -159,13 +164,14 @@
 
         <!-- Pricing Start -->
         <section class="container pricing-container" id="pricing">
-            <h1 class="title">Our Barber Pricing</h1>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nullam viverra est
+            <h1 class="title" data-aos="fade-up" data-aos-duration="1000">Our Barber Pricing</h1>
+            <p class="description" data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. In nullam viverra est
                 <span class="d-block">sit at
                     auctor integer diam
                     cursus eget amet mi.</span></p>
             <div class="row">
-                <ul class="col-4 list-group">
+                <ul class="col-4 list-group" data-aos="flip-left" data-aos-duration="1200">
                     <li class="list-group-item text-white">Treatment</li>
                     <li class="d-flex justify-content-between list-group-item bg-transparent">
                         <div class="d-flex">
@@ -197,7 +203,7 @@
                     </li>
                 </ul>
 
-                <ul class="col-4 list-group">
+                <ul class="col-4 list-group" data-aos="flip-up" data-aos-duration="1200">
                     <li class="list-group-item text-white">Make Over</li>
                     <li class="d-flex justify-content-between list-group-item bg-transparent">
                         <div class="d-flex">
@@ -229,7 +235,7 @@
                     </li>
                 </ul>
 
-                <ul class="col-4 list-group">
+                <ul class="col-4 list-group" data-aos="flip-right" data-aos-duration="1200">
                     <li class="list-group-item text-white">Paket Coloring</li>
                     <li class="d-flex justify-content-between list-group-item bg-transparent">
                         <div class="d-flex">
@@ -266,22 +272,28 @@
 
         <!-- Gallery Start -->
         <section class="container gallery-container" id="gallery">
-            <div class="text-center">
+            <div class="text-center" data-aos="fade-up" data-aos-duration="800">
                 <h1 class="title">Gallery Place</h1>
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit viverra dolor.</p>
             </div>
-            <div class="d-flex">
+            <div class="d-flex" data-aos-delay="800">
                 <div class="d-flex flex-column gallery-img-container">
-                    <img class="gallery-img1" src="assets/img/gallery-img1.png" alt="Gallery image 1">
-                    <img class="gallery-img2" src="assets/img/gallery-img2.png" alt="Gallery image 2">
+                    <img class="gallery-img1" data-aos="fade-right" data-aos-duration="800"
+                        src="assets/img/gallery-img1.png" alt="Gallery image 1">
+                    <img class="gallery-img2" data-aos="fade-right" data-aos-duration="800"
+                        src="assets/img/gallery-img2.png" alt="Gallery image 2">
                 </div>
                 <div class="d-flex flex-column gallery-img-container">
-                    <img class="gallery-img3" src="assets/img/gallery-img3.png" alt="Gallery image 3">
-                    <img class="gallery-img4" src="assets/img/gallery-img4.png" alt="Gallery image 4">
+                    <img class="gallery-img3" data-aos="fade-up" data-aos-duration="800"
+                        src="assets/img/gallery-img3.png" alt="Gallery image 3">
+                    <img class="gallery-img4" data-aos="fade-up" data-aos-duration="800"
+                        src="assets/img/gallery-img4.png" alt="Gallery image 4">
                 </div>
                 <div class="d-flex flex-column gallery-img-container">
-                    <img class="gallery-img5" src="assets/img/gallery-img5.png" alt="Gallery image 5">
-                    <img class="gallery-img6" src="assets/img/gallery-img6.png" alt="Gallery image 6">
+                    <img class="gallery-img5" data-aos="fade-left" data-aos-duration="800"
+                        src="assets/img/gallery-img5.png" alt="Gallery image 5">
+                    <img class="gallery-img6" data-aos="fade-left" data-aos-duration="800"
+                        src="assets/img/gallery-img6.png" alt="Gallery image 6">
                 </div>
             </div>
             <div class="d-flex justify-content-center">
@@ -292,11 +304,12 @@
 
         <!-- Testimonial Start -->
         <section class="container testimonial-container" id="testimonial">
-            <div class="text-center">
+            <div class="text-center" data-aos="fade-up" data-aos-duration="800">
                 <h1 class="title">Testimonial Client</h1>
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit viverra dolor.</p>
             </div>
-            <div class="swiper mySwiper">
+            <div class="swiper mySwiper" data-aos="fade-up" data-aos-duration="800"
+                data-aos-anchor-placement="top-bottom" data-aos-delay="600">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="card bg-transparent rounded-0">
@@ -407,7 +420,7 @@
         <!-- Testimonial End -->
 
         <!-- CTA Start -->
-        <section class="container cta-container" id="cta">
+        <section class="container cta-container" id="cta" data-aos="fade-up" data-aos-duration="800">
             <div class="box-container text-center">
                 <h1 class="title">Get 20% Discount <span class="d-block">Off Your First Booking</span></h1>
                 <button class="btn rounded-0 btn-everyday">Every Day</button>
@@ -416,7 +429,7 @@
         <!-- CTA End -->
 
         <!-- Footer Start -->
-        <footer class="container">
+        <footer class="container" data-aos="fade-up" data-aos-duration="800">
             <div class="d-flex justify-content-between">
                 <div class="left-panel">
                     <h5 class="title-text">BarberCase</h5>
@@ -451,6 +464,13 @@
                     <li class="sub-text">+62-12-3456-7890</li>
                 </ul>
             </div>
+            <div class="d-flex justify-content-between text-copyright">
+                <div>
+                    <p>BarberCase Design <img src="assets/img/copyright-icon.png" alt="Copyright Icon">
+                        <span>2022</span></p>
+                </div>
+                <p>All Right Reserved</p>
+            </div>
         </footer>
         <!-- Footer Start -->
     </main>
@@ -462,6 +482,9 @@
 
     <!-- Swiperjs -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    \
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- My script -->
     <script src="assets/js/app.js"></script>
