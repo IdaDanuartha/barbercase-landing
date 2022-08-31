@@ -72,6 +72,15 @@ a {
 
 .navbar.scroll .navbar-brand, .navbar.scroll .nav-item .nav-link {
     color: #fff !important;
+    transition: all .3s;
+}
+
+.navbar.scroll .nav-item .nav-link {
+    font-weight: 350;
+}
+
+.navbar.scroll .nav-item:hover .nav-link {
+    opacity: 0.7;
 }
 
 .navbar.scroll .border-bottom {
@@ -124,10 +133,12 @@ header .left-panel .btn-getstarted {
   background-color: var(--secondary-color);
   color: var(--small-text-color);
   transition: all .3s;
+  border: 2px solid var(--secondary-color);
 }
 
 header .left-panel .btn-getstarted:hover {
-  opacity: 0.7;
+  background: none;
+  color: var(--secondary-color);
 }
 
 header .left-panel .btn-ourservice {
@@ -311,10 +322,12 @@ header .right-panel .header-img {
     background-color: var(--secondary-color);
     margin-top: 40px;
     transition: all .3s;
+    border: 2px solid var(--secondary-color);
 }
 
 .gallery-container .btn-view-more:hover {
-  opacity: 0.7;
+    background: none;
+    color: var(--secondary-color);
 }
 
 
