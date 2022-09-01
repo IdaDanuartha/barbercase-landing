@@ -1,0 +1,21 @@
+/* Responsive */
+@media (max-width: 1396px) {
+    header .left-panel .title {
+        font-size: 70px;
+    }
+
+    header .left-panel .header-text .big-text {
+        font-size: 40px;
+    }
+
+    header .left-panel .header-text .small-text {
+        font-size: 0.8em;
+    }
+
+    header .left-panel .header-text .content.satu::after, 
+    header .left-panel .header-text .content.dua::after {
+        width: 65px;
+        top: 45px;
+        right: -65px;
+    }
+}
