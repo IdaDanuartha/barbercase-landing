@@ -1,5 +1,13 @@
 /* Responsive */
 @media (max-width: 1396px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
     header .left-panel .title {
         font-size: 70px;
     }
@@ -17,5 +25,121 @@
         width: 65px;
         top: 45px;
         right: -65px;
+    }
+
+    .service-container .card .card-text {
+        font-size: 14px;
+    }
+
+    .about-container .about-big-img {
+        width: 450px;
+        height: auto;
+    }
+
+    .about-container .img-container img {
+        width: 300px;
+        height: auto;
+    }
+
+    .pricing-container .row .list-group {
+        width: 360px;
+    }
+
+    .pricing-container .list-group .title-text,
+    .pricing-container .list-group .price-text {
+        font-size: 16px;
+    }
+
+    .pricing-container .list-group .duration-text {
+        font-size: 12px;
+    }
+
+    .gallery-container .gallery-img-container .gallery-img1,
+    .gallery-container .gallery-img-container .gallery-img2,
+    .gallery-container .gallery-img-container .gallery-img3,
+    .gallery-container .gallery-img-container .gallery-img4,
+    .gallery-container .gallery-img-container .gallery-img5,
+    .gallery-container .gallery-img-container .gallery-img6 {
+        width: 350px;
+    }
+
+    .swiper-button-prev {
+        margin: 0 10px 100px 500px;
+    }
+    
+    .swiper-button-next {
+        margin: -143px 10px 10px 560px;
+    }
+
+    .cta-container .box-container .title {
+        font-size: 44px;
+    }
+
+    footer .list-navigation .title-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    header .left-panel .title {
+        font-size: 65px;
+    }
+
+    header .left-panel {
+        margin-right: 50px;
+    }
+
+    header .left-panel .header-text .content {
+        margin-right: 40px;        
+    }
+
+    header .left-panel .header-text .big-text {
+        font-size: 40px;
+    }
+
+    header .left-panel .header-text .small-text {
+        font-size: 0.8em;
+    }
+
+    header .left-panel .header-text .content.satu::after,
+    header .left-panel .header-text .content.dua::after {
+        right: -55px;
+    }
+
+    header .right-panel .header-img {
+        width: 430px;
+    }
+
+    .service-container .card .card-text {
+        font-size: 12px;
+    }
+
+    .about-container .about-big-img {
+        width: 400px;
+    }
+
+    .about-container .img-container img {
+        width: 250px;
+    }
+
+    .pricing-container .row .list-group {
+        width: 300px;
+    }
+
+    .pricing-container .list-group .title-text,
+    .pricing-container .list-group .price-text {
+        font-size: 16px;
+    }
+
+    .pricing-container .list-group .duration-text {
+        font-size: 12px;
     }
 }

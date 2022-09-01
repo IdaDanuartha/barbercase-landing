@@ -100,6 +100,10 @@ a {
     font-weight: 500;
 }
 
+.navbar .container .navbar-toggler {    
+    background-color: var(--secondary-color);
+}
+
 
 /* Header */
 header {
@@ -264,10 +268,6 @@ header .right-panel .header-img {
     width: 420px;
 }
 
-.pricing-container .list-group:nth-child(2) {
-    margin: 0 30px;
-}
-
 .pricing-container .list-group .duration-text {
     color: var(--small-text-color);
 }
@@ -388,8 +388,6 @@ header .right-panel .header-img {
 
 .swiper-button-prev, .swiper-button-next {
     position: static;
-    /* bottom: -50px;
-    left: 600px; */
     border: 2px solid var(--secondary-color-with-opacity);
     color: #fff;
     padding: 20px;

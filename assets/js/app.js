@@ -32,9 +32,7 @@ const navbar = document.querySelector('.navbar')
 window.addEventListener('scroll', function() {
     if(window.scrollY > 30) {
         navbar.classList.add('scroll')
-        console.log('Udah di atas')
     } else {
         navbar.classList.remove('scroll')
-        console.log('udah dibawah')
     }
 })
