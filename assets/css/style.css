@@ -87,6 +87,10 @@ a {
     display: none;
 }
 
+.navbar.scroll .container .navbar-toggler {    
+    background-color: #fff;
+}
+
 .navbar .border-bottom {    
     width: 100%;
     height: 2px;
