@@ -429,8 +429,14 @@ header .right-panel .header-img {
     padding: 12px 30px;
     background-color: var(--main-color);
     color: #fff;
+    transition: all .3s;
 }
 
+.cta-container .box-container .btn-everyday:hover {
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    background: none;
+}
 
 /* Footer */
 footer {
